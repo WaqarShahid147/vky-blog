@@ -8,3 +8,9 @@
   Description
 </h5>
 <%= @article.description %>
+<p>
+  <%= link_to "Edit this article", edit_article_path(@article) %>
+</p>
+<p>
+  <%= link_to "Back to all articles list", articles_path %>
+</p>
