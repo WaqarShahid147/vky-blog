@@ -5,26 +5,22 @@
 </head>
 
 <body>
-  <h1>Welcome to Vky's Blog</h1>
+  <h1>Welcome to Wish Raza a happy birthday</h1>
   <hr/>
-  <p>Current time = <%= current_time = Time.now %></p>
-  <p>Birthday time = <%= birthday_time = Time.new(2019, 04, 20) %></p>
+  <p><% current_time = Time.now %></p>
+  <p><% birthday_time = Time.new(2019, 04, 20) %></p>
+  <% if (current_time > birthday_time)%>
+    <h3>Happy Birthday Razuuu</h3>
+  <% else %>
+    <h3>
+      <%= (birthday_time.to_i - current_time.to_i) / (60 * 60)%> hr |
+      <%= (birthday_time.to_i - current_time.to_i) / (60)%> min |
+      <%= ((birthday_time).to_i - (current_time).to_i)%> sec left for <i>Raza's birthday</i> to start
+    </h3>
+  <% end %>
+  
   <p>
-    <%= (birthday_time.to_i - current_time.to_i) / (60 * 60 * 24)%> day
-    <%= (birthday_time.to_i - current_time.to_i) / (60 * 60)%> hr
-    <%= (birthday_time.to_i - current_time.to_i) / (60)%> min
-    <%= ((birthday_time).to_i - (current_time).to_i)%> sec left
-  </p>
-
-
-  <p>Proud <b>sleeper and eater</b></p>
-  <ul>
-    <li>Always sluggish</li>
-    <li>Love to play and watch <i>Dota</i> alooot</li>
-  </ul>
-  <h3>I wanna be like him:</h3>
-  <p>
-    <img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.gosugamers.net%2Ffiles%2Fimages%2Ffeatures%2F2018%2Fjune%2Fsumail-smal.jpg" alt="Sumail">
+    <img src="https://scontent.flhe7-1.fna.fbcdn.net/v/t1.0-9/30708207_1717581061637893_1777589051444953088_o.jpg?_nc_cat=104&_nc_eui2=AeF3q3T80RydXQcGrbuADha9yb-cYMVcLbCXtTLE69ALhEJ5HfvOLX5JziBKFIr0BNNh0xJLa3T9ijkc15T56lkkJEieUtua2O-7r15p_1HxXA&_nc_ht=scontent.flhe7-1.fna&oh=38ad5bbcf45b2ebeea49757f3bdcda28&oe=5D2B15E7" alt="Sumail">
   </p>
   <p>
     Go to
