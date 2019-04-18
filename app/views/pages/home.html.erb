@@ -7,6 +7,16 @@
 <body>
   <h1>Welcome to Vky's Blog</h1>
   <hr/>
+  <p>Current time = <%= current_time = Time.now %></p>
+  <p>Birthday time = <%= birthday_time = Time.new(2019, 04, 20) %></p>
+  <p>
+    <%= (birthday_time.to_i - current_time.to_i) / (60 * 60 * 24)%> day
+    <%= (birthday_time.to_i - current_time.to_i) / (60 * 60)%> hr
+    <%= (birthday_time.to_i - current_time.to_i) / (60)%> min
+    <%= ((birthday_time).to_i - (current_time).to_i)%> sec left
+  </p>
+
+
   <p>Proud <b>sleeper and eater</b></p>
   <ul>
     <li>Always sluggish</li>
